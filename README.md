@@ -85,14 +85,14 @@ python manage.py runserver
 > This project is built for learning and demonstrating backend engineering concepts in a real-world scenario, not just as a basic CRUD application.
 
 ## 📈 Roadmap
-* [] Basic e-commerce functionality
-* [] User authentication
-* [] Product management
-* [] Redis caching layer
-* [] Celery integration
-* [] Payment integration (Stripe)
-* [] Dockerization
-* [] CI/CD pipeline
+* [ ] Basic e-commerce functionality
+* [ ] User authentication
+* [ ] Product management
+* [ ] Redis caching layer
+* [ ] Celery integration
+* [ ] Payment integration (Stripe)
+* [ ] Dockerization
+* [ ] CI/CD pipeline
 
 
 ## 🧪 Future Improvements
