@@ -19,28 +19,30 @@ The goal is not just to build a working store, but to progressively evolve the a
 
 ## 🧱 Tech Stack
 
-| Layer      | Technology        |
-|------------|------------------|
-| Frontend   | Tailwind CSS     |
-| Backend    | Django (Python)  |
-| Database   | PostgreSQL       |
-| Cache      | Redis            |
-| Async Jobs | Celery           |
+| Layer      | Technology             |
+|------------|------------------------|
+| Frontend   | Vue + Tailwind CSS     |
+| Backend    | Django (Python)        |
+| Database   | PostgreSQL             |
+| Cache      | Redis                  |
+| Async Jobs | Celery                 |
 
 ---
 
 ## 🏗️ Architecture
 
 ```txt
-Client (Browser)
-      ↓
-Django (Views / API)
-      ↓
-PostgreSQL (Primary Data Store)
-      ↓
-Redis (Cache & Message Broker)
-      ↓
-Celery Workers (Async Tasks)
+Frontend (Vue + Tailwind)
+        ↓
+Django (Views / DRF API)
+        ↓
+PostgreSQL (data)
+        ↓
+Redis (cache + queue)
+        ↓
+Celery (background jobs)
+        ↓
+Stripe (payments)
 ```
 
 ## ⚙️ Core Features
