@@ -45,6 +45,13 @@ Celery (background jobs)
 Stripe (payments)
 ```
 
+## Models / Entities
+* Customer
+* Products
+* Inventory
+* Order
+* Payment
+
 ## ⚙️ Core Features
 * User authentication (login/register/logout)
 * Product catalog
