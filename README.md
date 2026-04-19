@@ -41,3 +41,56 @@ PostgreSQL (Primary Data Store)
 Redis (Cache & Message Broker)
       ↓
 Celery Workers (Async Tasks)
+```
+
+## ⚙️ Core Features
+* User authentication (login/register/logout)
+* Product catalog
+* Shopping cart system
+* Checkout flow (ready for payment integration)
+* Admin panel for product management
+
+## 📦 Getting Started
+```bash
+# Clone the repo
+git clone https://github.com/your-username/dj-store-stack.git
+
+# Enter project
+cd dj-store-stack
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run migrations
+python manage.py migrate
+
+# Start server
+python manage.py runserver
+```
+
+> ###💡 Notes
+> This project is built for learning and demonstrating backend engineering concepts in a real-world scenario, not just as a basic CRUD application.
+
+## 📈 Roadmap
+[] Basic e-commerce functionality
+[] User authentication
+[] Product management
+[] Redis caching layer
+[] Celery integration
+[] Payment integration (Stripe)
+[] Dockerization
+[] CI/CD pipeline
+
+
+## 🧪 Future Improvements
+* Advanced search (filters, indexing)
+* Recommendation system
+* Microservices decomposition (experimental)
+* Observability (logging + monitoring)
+
+## 📄 License
+MIT License
