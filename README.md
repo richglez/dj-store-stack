@@ -32,17 +32,21 @@ The goal is not just to build a working store, but to progressively evolve the a
 ## 🏗️ Architecture
 
 ```txt
-Frontend (Vue + Tailwind)
-        ↓
-Django (Views / DRF API)
-        ↓
-PostgreSQL (data)
-        ↓
-Redis (cache + queue)
-        ↓
-Celery (background jobs)
-        ↓
-Stripe (payments)
+[Frontend]
+   ↓
+[API Layer - Django / DRF]
+   ↓
+[Domain Layer (Business Logic)]
+   ↓
+[Data Layer]
+   ├── PostgreSQL
+   └── Redis (cache)
+   
+[Async Layer]
+   └── Celery Workers
+
+[External Services]
+   └── Stripe
 ```
 
 ## Models / Entities
